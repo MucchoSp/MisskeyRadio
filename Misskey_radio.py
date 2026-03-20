@@ -13,7 +13,8 @@ import google.generativeai as genai
 
 # Gemini API の設定
 # 環境変数などから取得するか、直接指定してください
-API_KEY = os.environ.get("GEMINI_API_KEY", "[ENCRYPTION_KEY]")
+# https://aistudio.google.com/api-keys
+API_KEY = os.environ.get("GEMINI_API_KEY", "[GEMINI_API_KEY]")
 genai.configure(api_key=API_KEY)
 
 # ラジオの全体的な人格と会話履歴を保持するリスト
